@@ -1,0 +1,131 @@
+/*
+Author: Olli Kuikka 
+Date: 9.10.2025 
+*/
+
+/* --- Base Styles --- */
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #1E1E1E; /* PMS Black */
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+  color: #E10E49; /* PMS 192 Red */
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* Group selector example */
+h1, h2, h3 {
+  text-transform: none;
+}
+
+/* --- Header and Footer --- */
+header {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-bottom: 3px solid #E10E49;
+  background-color: #fff;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 1.5rem;
+  border-top: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+/* --- Element Selectors --- */
+p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+  max-width: 800px;
+}
+
+/* --- ID Selector --- */
+#special-message {
+  background-color: #FFE4EC;
+  border-left: 5px solid #E10E49;
+  padding: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+/* --- Class Selectors --- */
+.box {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.highlight {
+  background-color: #fff1f5;
+  border-color: #E10E49;
+}
+
+/* --- Descendant Selector --- */
+section ul li {
+  margin-bottom: 0.6rem;
+  list-style-type: disc;
+}
+
+/* --- Attribute Selectors --- */
+a[target="_blank"] {
+  color: #B00C3C; /* Slightly darker red for links */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+a[target="_blank"]:hover {
+  color: #8C0A32; /* Darker red on hover */
+  text-decoration: underline;
+}
+
+img[alt] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+/* --- Layout --- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
