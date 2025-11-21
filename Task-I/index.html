@@ -1,103 +1,141 @@
+<!-- Olli Kuikka
+    21.11.2025
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WaveRunner Rentals</title>
+  <title>KokkoJet Rentals</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Premium Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <header>
-    <h1 class="logo">WaveRunner Rentals</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#rentals">Rentals</a></li>
-        <li><a href="#features">Features</a></li>
-      </ul>
-    </nav>
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">KokkoJet</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#rentals">Rentals</a></li>
+          <li><a href="#features">Why Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-content">
-        <h1>Jet Ski Rentals for Your Next Adventure</h1>
-        <p>Affordable, safe, and thrilling rides for all experience levels.</p>
-        <a class="btn" href="#rentals">View Rentals</a>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h2>Premium Jet Ski Adventures</h2>
+        <p>Ride the waves in style — safe, powerful, unforgettable experiences for tourists and adventurers.</p>
+        <a href="#rentals" class="btn-primary">Explore Rentals</a>
       </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about">
-      <h2>About Us</h2>
-      <p>
-        WaveRunner Rentals provides top-quality jet skis for tourists looking 
-        for unforgettable water adventures. Located at the heart of the coastline, 
-        we focus on safety, fun, and incredible outdoor experiences.
-      </p>
-    </section>
-
-    <!-- RENTALS / PRODUCT HIGHLIGHTS -->
-    <section id="rentals" class="rentals">
-      <h2>Our Jet Skis</h2>
-      <div class="rental-grid">
-
-        <article class="card">
-          <figure>
-            <img src="https://via.placeholder.com/400x250?text=Standard+Jet+Ski" 
-                 alt="Standard Jet Ski" />
-          </figure>
-          <h3>Standard Jet Ski</h3>
-          <p>Perfect for beginners and casual riders.</p>
+    <!-- ABOUT -->
+    <section id="about" class="about container">
+      <div class="about-grid">
+        <article>
+          <h2>Your Ocean Adventure Starts Here</h2>
+          <p>
+            At KokkoJet, we bring world-class jet ski rentals to the shoreline. 
+            Whether you're a beginner or an experienced rider, our fleet offers something for everyone. 
+            We emphasize safety, comfort, and a premium experience from start to finish.
+          </p>
         </article>
 
-        <article class="card">
-          <figure>
-            <img src="https://via.placeholder.com/400x250?text=Performance+Jet+Ski" 
-                 alt="High-performance Jet Ski" />
-          </figure>
-          <h3>Performance Jet Ski</h3>
-          <p>More speed, more power, more excitement.</p>
-        </article>
-
-        <article class="card">
-          <figure>
-            <img src="https://via.placeholder.com/400x250?text=Double+Rider" 
-                 alt="Double rider jet ski" />
-          </figure>
-          <h3>Double Rider Jet Ski</h3>
-          <p>Great for couples or families wanting shared fun.</p>
-        </article>
-
+        <figure>
+          <img src="https://img.pikbest.com/ai/illus_our/20230422/ccc61913b9b68e7fbff93f203cc12ad7.jpg!w700wp" 
+               alt="People riding jet skis on ocean" />
+        </figure>
       </div>
     </section>
 
-    <!-- FEATURES SECTION -->
+    <!-- RENTAL OPTIONS -->
+    <section id="rentals" class="rentals-section">
+      <div class="container">
+        <h2 class="section-title">Our Jet Ski Fleet</h2>
+        <div class="rental-cards">
+
+          <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSau6VYsRn5JrOe7dQhZnzXU1lV4-D0OtFbPQ&s" alt="Standard jet ski" />
+            <h3>Standard Jet Ski</h3>
+            <p>Perfect for beginners and families — stable and easy to control.</p>
+          </article>
+
+          <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZH9LZ1_v2lG6URT3vP5ywbwAS_Eg95mlQ0A&s" alt="High-performance jet ski" />
+            <h3>Sport Performance</h3>
+            <p>Designed for speed seekers — fast, powerful, and exhilarating.</p>
+          </article>
+
+          <article class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGxcwRZze6kPPYKdZltv2ycK0WnG8OjqSwiQ&s" alt="Double rider jet ski" />
+            <h3>Double Rider</h3>
+            <p>Share the adventure with a friend or partner — spacious and fun.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
     <section id="features" class="features">
-      <h2>Why Choose Us?</h2>
-      <ul>
-        <li>✔ Certified safety gear included</li>
-        <li>✔ Training provided for first-time riders</li>
-        <li>✔ GPS-equipped jet skis</li>
-        <li>✔ Group discounts available</li>
-        <li>✔ Free photo package option</li>
-      </ul>
+      <div class="container features-grid">
+        <div class="feature-box">
+          <h3>Certified Safety Gear</h3>
+          <p>Top-quality life jackets and equipment included with every rental.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>Beginner Friendly</h3>
+          <p>Short training session provided for all first-time riders.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>Premium GPS Models</h3>
+          <p>Track your route and explore safely with built-in navigation.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>Coastal Tours</h3>
+          <p>Optional guided tours for groups and families.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- CTA SECTION -->
+    <!-- CTA -->
     <section class="cta">
-      <h2>Ready to Ride?</h2>
-      <a class="btn" href="#">Book Your Ride Today</a>
+      <div class="container">
+        <h2>Ready for a Ride?</h2>
+        <p>Book your jet ski experience today and make your vacation unforgettable.</p>
+        <a href="#" class="btn-primary">Book Now</a>
+      </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>© 2025 WaveRunner Rentals</p>
-    <p>Located at Sunny Coast Beach • Open 8:00–20:00</p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>KokkoJet Rentals</h3>
+        <p>Kokkola • Open Daily 8:00–20:00 • +358 123 123 12</p>
+      </div>
+      <div>
+        <p>© 2025 KokkoJet Rentals • All rights reserved</p>
+      </div>
+    </div>
   </footer>
 
 </body>
