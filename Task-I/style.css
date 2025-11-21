@@ -1,0 +1,175 @@
+/* COLOR VARIABLES */
+:root {
+  --navy: #0A1A2F;
+  --white: #ffffff;
+  --light-blue: #7EC8E3;
+  --button-blue: #2C8CFF;
+  --soft-bg: #F2F6FA;
+  --text-dark: #0A1A2F;
+  --text-light: #ffffff;
+}
+
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: var(--white);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  background: var(--navy);
+  color: var(--text-light);
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url("https://via.placeholder.com/1600x700?text=Jet+Ski+Hero+Image")
+    center/cover no-repeat;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  background: rgba(10, 26, 47, 0.75);
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  color: var(--white);
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  background: var(--button-blue);
+  color: var(--white);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* ABOUT */
+.about {
+  padding: 3rem 2rem;
+  background: var(--soft-bg);
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+}
+
+/* RENTALS */
+.rentals {
+  padding: 3rem 2rem;
+  background: var(--white);
+}
+
+.rentals h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.rental-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: var(--soft-bg);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* FEATURES */
+.features {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.features ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.features li {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* CTA */
+.cta {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: var(--navy);
+  color: var(--white);
+}
+
+.cta .btn {
+  margin-top: 1rem;
+}
+
+/* FOOTER */
+footer {
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
