@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 <body>
   <h1>Web‑kehittamisen‑perusteet — Task pages</h1>
